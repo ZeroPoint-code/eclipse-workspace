@@ -1,0 +1,19 @@
+# Eclipse-Dateien ignorieren
+.metadata/
+.settings/
+bin/
+.classpath
+.project
+
+# Temporäre Dateien
+*.log
+*.tmp
+Thumbs.db
+
+# Gradle/Maven-Cache
+.gradle/
+target/
+build/
+
+# Browser/WebView-Zeug
+**/EBWebView/

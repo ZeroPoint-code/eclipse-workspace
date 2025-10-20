@@ -1,13 +1,8 @@
 
-import java.net.URL;
-import java.util.Scanner;
-
-import sun.awt.www.content.audio.x_aiff;
-
 public class scheliff {
 
 	public static void main(String[] args) {
-		
+	/*	
 		String s = "Ich teste was teste";
 		String[] worte = s.split(" ");
 		
@@ -24,7 +19,35 @@ public class scheliff {
 			System.out.println(worte[umgekehrt]);
 			umgekehrt--;
 		}
+		*/
+		
+		int n = 5;
+		int faku = 1;
+	    int i = 0;
+		
+		while(i < n) {
+			i++;
+			faku = faku * i;
+			System.out.println(faku);
+		}
+		
+		int [] zahlen = new int [6];
+		
+		//VERARBEITUNG TODO
 
+		i = 0;
+		
+		while (i < zahlen.length) {
+			zahlen[i] = (int) (Math.random() * 49) + 1;
+			i++;
+		}
+		
+		//Ausgabe
+		i = 0;
+		while (i < zahlen.length) {
+			System.out.println(zahlen[i]);
+		}
+		
 	}
 
 }

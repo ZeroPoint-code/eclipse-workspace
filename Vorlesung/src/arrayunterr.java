@@ -85,7 +85,13 @@ public class arrayunterr {
         
         String textnormal = "Ich bin ich ein Student!";
         
-        var worte = textnormal.split(" ");
+        String[] worte = textnormal.split("\\W+");
+        
+        i = 0;
+        while (i < worte.length) {
+        	System.out.println(worte[i]);
+        	i++; // variable max vergleich mit boolean - aktuelle wort vergelichen mit if - worte i length
+        }
         
         // Aufgabe 4.
         
@@ -95,9 +101,24 @@ public class arrayunterr {
         
         do {
             zahlen[i] = rand.nextInt(1000); // Zufallszahl zwischen 0 und 999
+            //System.out.println(zahlen[i]);
             i++;
-        } while (i < 2001);
-
+        } while (i < zahlen.length); 
+        
+        i = 0;
+        int summe = -1;
+        int pos = -1;
+        
+        while (i < zahlen.length - 2) {
+        	int zwischensumme = zahlen[i] + zahlen[i + 1] + zahlen[i + 2];
+        	
+        	if (zwischensumme > summe) {
+        		summe = zwischensumme;
+        		pos = i;
+        	}
+        	i++;
+        }
+        System.out.println(pos + " Summe = " + summe + " " + zahlen[pos] + " " + zahlen[pos + 1] + " " + zahlen[pos + 2]);
 	}
 
 }

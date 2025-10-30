@@ -27,7 +27,7 @@ public class fibzahl {
 
 	}
 	
-	public static int[] fibonacci(int params) {
+	public static int[] fibonacci(int params) {		// static ist ein mussss!!!
 		int[] fibz = new int[params];
 		
 		if((params == 0) || (params == 1) || (params == 2)) {

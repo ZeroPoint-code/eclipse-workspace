@@ -101,7 +101,7 @@ public class schleifen {
 		int würfel = 0;
 		int dreimalsechs = 0;
 		
-		
+		/*
 		while(dreimalsechs != 18) { 		// Zusatz 1:
 			würfel = (int) (Math.random() * 7);
 			System.out.println(würfel);
@@ -111,7 +111,7 @@ public class schleifen {
 			}
 		}
 		System.out.println("Drei mal Sechs wurde erfüllt!");
-		
+		*/
 		
 		würfel = 0;
 		/*
@@ -135,6 +135,25 @@ public class schleifen {
 			}
 		}
 		*/
+		
+		dreimalsechs = 0;
+		
+		
+		while(dreimalsechs != 36) { 		// Zusatz 3:
+			würfel = (int) (Math.random() * 7);
+			System.out.println(würfel);
+			
+			if(würfel == 6) {
+				würfel = (int) (Math.random() * 7);
+				System.out.println(würfel);
+				
+				if(würfel == 6) {
+					System.out.println("ZweierPack erfüllt!");
+					dreimalsechs += 12;
+				}
+			}
+		}
+		System.out.println("Drei mal 2 mal Sechs wurde erfüllt!");
 		
 		
 		

@@ -1,8 +1,5 @@
 import java.util.Scanner;
 
-import com.sun.security.auth.NTDomainPrincipal;
-import com.sun.tools.classfile.StackMapTable_attribute.chop_frame;
-
 public class methodenwdh {
 
 	public static void main(String[] args) {

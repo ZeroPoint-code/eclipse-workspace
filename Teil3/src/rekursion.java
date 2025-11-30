@@ -10,9 +10,7 @@ public class rekursion {
 		
 		//fakultat(10);
 		System.out.println(fakultat(3));
-		
-		System.out.println("Fibs: " + fibs(4));
-
+		System.out.println("Fibs: " + fibs(6));
 	}
 	
 	public static void rekursiv(int i, int ende) {
@@ -21,9 +19,7 @@ public class rekursion {
 		if(i < ende) {
 			rekursiv(++i, ende);
 		}
-		
 		System.out.println("Ende der rekursiv-Methode " + i);
-		
 	}
 	
 	public static int fakultat(int n) {
